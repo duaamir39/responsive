@@ -1,0 +1,57 @@
+.wrapper{
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+}
+.wrapper > *{
+    padding: 10px;
+    margin: 10px;
+    flex: 1 100%;
+    border-radius: 10px;
+    text-transform: capitalize;
+}
+.header{
+    background-color: tomato;
+    height: 120px;
+}
+.main{
+    text-align: left;
+    background-color: rgb(98, 205, 241);
+    height: 300px;
+    font-size: 24px;
+    align-content: center;
+}
+p{
+    line-height: 2em;
+}
+.aside-1{
+    background-color: gold;
+}
+.aside-2{
+    background-color: rgb(222, 100, 222);
+}
+.footer{
+    background-color: lightgreen;
+    height: 120px;
+}
+@media all and (min-width:800px){
+    .main{
+        flex: 3;
+        order: 2;
+    }
+    .aside-1{
+        order: 1;
+    }
+    .aside-2{
+        order: 3;
+    }
+.footer{
+order: 4;
+}
+}
+
+@media all and (min-width:600px){
+    .aside{
+        flex: 1;
+    }
+}
